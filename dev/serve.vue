@@ -1,7 +1,7 @@
 <script>
 import Vue from 'vue'
 
-import mixins from '../src/mixins'
+import mixins from '../dist/mylib.common'
 export default Vue.extend({
   mixins: [mixins],
   name: 'ServeDev',
@@ -10,6 +10,6 @@ export default Vue.extend({
 
 <template>
   <div id="app">
-    <h1 @click="linkUrl('/test')">link here</h1>
+    <h1 @click="test('/test')">link here</h1>
   </div>
 </template>
