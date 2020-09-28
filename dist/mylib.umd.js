@@ -230,7 +230,6 @@ if (typeof window !== 'undefined') {
 /** @format */
 
 var src_install = function install(Vue, options) {
-  // 1.  inject some component options
   Vue.mixin(mixins);
 };
 
