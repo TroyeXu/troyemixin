@@ -9,5 +9,8 @@ export default {
           err
         })
     },
+    test() {
+      console.log('this', this)
+    },
   },
 }
