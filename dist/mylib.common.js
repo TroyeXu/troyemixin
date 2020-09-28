@@ -218,20 +218,10 @@ if (typeof window !== 'undefined') {
     }
   }
 });
-// CONCATENATED MODULE: ./src/index.js
-
-
-var src_MyPlugin = function MyPlugin(Vue, options) {
-  Vue.mixin(mixins);
-};
-
-/* harmony default export */ var src_0 = ({
-  MyPlugin: src_MyPlugin
-});
 // CONCATENATED MODULE: ./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js
 
 
-/* harmony default export */ var entry_lib = __webpack_exports__["default"] = (src_0);
+/* harmony default export */ var entry_lib = __webpack_exports__["default"] = (mixins);
 
 
 

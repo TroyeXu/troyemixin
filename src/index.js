@@ -1,6 +1,8 @@
-import utilsMixins from '@/mixins.js'
+// tmeplate version
 
-const MyPlugin = function(Vue, options) {
-  Vue.mixin(utilsMixins)
-}
-export default { MyPlugin }
+// import utilsMixins from '@/mixins.js'
+
+// const MyPlugin = function(Vue, options) {
+//   Vue.mixin(utilsMixins)
+// }
+// export default { MyPlugin }
