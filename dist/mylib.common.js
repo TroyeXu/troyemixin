@@ -212,6 +212,9 @@ if (typeof window !== 'undefined') {
       }).catch(function (err) {
         err;
       });
+    },
+    test: function test() {
+      console.log('this', this);
     }
   }
 });
@@ -220,12 +223,14 @@ if (typeof window !== 'undefined') {
 
 /** @format */
 
-var src_install = function install(Vue, options) {
+var MyPlugin = null;
+
+MyPlugin.install = function (Vue, options) {
   Vue.mixin(mixins);
 };
 
 /* harmony default export */ var src_0 = ({
-  install: src_install
+  MyPlugin: MyPlugin
 });
 // CONCATENATED MODULE: ./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js
 
