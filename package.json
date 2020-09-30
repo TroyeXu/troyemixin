@@ -1,21 +1,26 @@
 {
-  "name": "troyemixin",
+  "name": "@troyexu/yl-plugin",
   "version": "8.0.0",
   "description": "",
   "scripts": {
     "serve": "vue-cli-service serve dev/serve.js",
-    "build": "vue-cli-service build --target lib --name mylib ./src/mixins.js"
+    "build": "cross-env NODE_ENV=production rollup --config build/rollup.config.js"
   },
   "main": "dist/mylib.common.js",
   "unpkg": "dist/mylib.umd.min.js",
   "files": [],
   "dependencies": {
-    "vue-router": "^3.4.5"
+    "@troyexu/yl-fn": "^6.0.0",
+    "axios": "^0.20.0"
   },
   "devDependencies": {
+    "vue-router": "^3.4.5",
     "@babel/core": "^7.9.0",
+    "@rollup/plugin-replace": "^2.3.3",
     "@babel/preset-env": "^7.9.5",
     "@vue/cli-plugin-babel": "^4.3.1",
+    "@rollup/plugin-commonjs": "^15.1.0",
+    "@rollup/plugin-alias": "^3.1.1",
     "@vue/cli-service": "^4.3.1",
     "cross-env": "^7.0.2",
     "minimist": "^1.2.5",

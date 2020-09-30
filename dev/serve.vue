@@ -1,9 +1,7 @@
 <script>
 import Vue from 'vue'
 
-import mixins from '../dist/mylib.common'
 export default Vue.extend({
-  mixins: [mixins],
   name: 'ServeDev',
 })
 </script>
